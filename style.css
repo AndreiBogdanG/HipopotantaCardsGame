@@ -288,7 +288,3 @@ button {
     }
     
 }
-@media only screen and (max-height: 1024px){
-    img {max-width: 70px;}
-    #titleImg{max-width: 400px;}
-}
