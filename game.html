@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hipopotanta</title>
+    <link rel="stylesheet" href="style.css"> 
+     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kaushan+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <audio id="myAudio">
+        <source src="Sounds/deal.wav" type="audio/wav">
+    </audio>
+
+<header>
+    <div class="gameTitle">
+    <img id="titleImg" src="Images/title1.png" alt="Title">
+    </div>
+</header>    
+
+<main>
+    <div class="mainDiv">
+   <div id="div1">
+    <p id="cards1"></p>
+ <div class="pcCards">
+    <img  id="pcCard9"  src="Images/bkgb.png" alt="First Player's Deck" draggable="false" onclick="pickPCCard(event)">
+    <img  id="pcCard7"  src="Images/bkgb.png" alt="First Player's Deck" draggable="false" onclick="pickPCCard(event)">
+    <img  id="pcCard5"  src="Images/bkgb.png" alt="First Player's Deck" draggable="false" onclick="pickPCCard(event)">
+    <img  id="pcCard3"  src="Images/bkgb.png" alt="First Player's Deck" draggable="false" onclick="pickPCCard(event)">
+    <img  id="pcCard1"  src="Images/bkgb.png" alt="First Player's Deck" draggable="false" onclick="pickPCCard(event)">
+    <img  id="pcCard2"  src="Images/bkgb.png" alt="First Player's Deck" draggable="false" onclick="pickPCCard(event)">
+    <img  id="pcCard4"  src="Images/bkgb.png" alt="First Player's Deck" draggable="false" onclick="pickPCCard(event)">
+    <img  id="pcCard6"  src="Images/bkgb.png" alt="First Player's Deck" draggable="false" onclick="pickPCCard(event)">
+    <img  id="pcCard8"  src="Images/bkgb.png" alt="First Player's Deck" draggable="false" onclick="pickPCCard(event)">
+    <img  id="pcCard10" src="Images/bkgb.png" alt="First Player's Deck" draggable="false" onclick="pickPCCard(event)">
+</div>
+
+<div id="textMessagesDivPC">
+    <p id="textMessagesPc"></p>
+</div>
+
+<div class="centralCards">
+<img id="mainDeck" src="Images/bkgb.png" alt="Main Deck" draggable="false" onclick="drawACard()">
+<img id="discarded"  src="Images/empty.png" alt="PC's Discarded Card" ondrop="drop(event)" ondragover="allowDrop(event)">    
+</div>
+   </div>
+   
+</div>
+
+<div class="playerCards">
+    <img id="playerCard9"  src="Images/9d.png" alt="First Player's Deck" draggable="false"  onclick = "pickCard(event)">
+    <img id="playerCard7"  src="Images/7s.png" alt="First Player's Deck" draggable="false"  onclick = "pickCard(event)">
+    <img id="playerCard5"  src="Images/5c.png" alt="First Player's Deck" draggable="false"  onclick = "pickCard(event)">
+    <img id="playerCard3"  src="Images/3s.png" alt="First Player's Deck" draggable="false"  onclick = "pickCard(event)">
+    <img id="playerCard1"  src="Images/15s.png" alt="First Player's Deck" draggable="false"  onclick = "pickCard(event)">
+    <img id="playerCard2"  src="Images/2d.png" alt="First Player's Deck" draggable="false"  onclick = "pickCard(event)">
+    <img id="playerCard4"  src="Images/4c.png" alt="First Player's Deck" draggable="false"  onclick = "pickCard(event)">
+    <img id="playerCard6"  src="Images/6c.png" alt="First Player's Deck" draggable="false"  onclick = "pickCard(event)">
+    <img id="playerCard8"  src="Images/8s.png" alt="First Player's Deck" draggable="false"  onclick = "pickCard(event)">
+    <img id="playerCard10" src="Images/10d.png" alt="First Player's Deck" draggable="false"  onclick = "pickCard(event)">
+</div>
+
+<p id="testP"></p>
+
+<div class="btnDiv">
+<img id="arrow" src="Images/arrow.png" alt="">
+<button class="btn" id="newGameButton" ondblclick="dealFirstCards()"></button>
+<button class="btn" id="endTurnButton" onclick="endPlayersTurn()"></button>
+</div>
+
+</main>
+<footer></footer>
+<script src="script.js"></script>
+</body>
+</html>

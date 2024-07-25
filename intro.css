@@ -1,0 +1,95 @@
+body{
+    background-color: rgb(0, 0, 0);
+    background: linear-gradient(40deg, rgba(2,0,36,1) 0%, rgb(200, 237, 150) 35%, rgb(50, 189, 217) 100%);
+    color: white;
+    font-size: xx-large;
+    min-height: 100vh;
+}
+p, h1{
+    text-align: center;
+    font-family: "Amatic SC", sans-serif;
+    font-weight:bolder;
+    color: #050505;
+}
+.paragraphs{
+    max-width: 800px;
+    margin: 0 auto; 
+    padding: 0 15px; 
+    text-align: justify;
+}
+
+img{
+    width: 500px;
+    transform: rotate(-2deg);
+    box-shadow:  -0.3em 0.3em 1em rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+}
+
+.imageDiv{
+display: flex;
+justify-content: center;
+}
+
+.btnDiv{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.btn {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right,#77530a,#ffd277,#77530a,#77530a,#ffd277,#77530a);
+    background-size: 250%;
+    background-position: left;
+    color: #ffd277;
+    position: relative;
+    cursor: pointer;
+    transition-duration: 1s;
+    overflow: hidden;
+  }
+
+  .btn::before {
+    position: absolute;
+    color: #ffd277;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 97%;
+    height: 90%;
+    border-radius: 8px;
+    transition-duration: 1s;
+    background-color: rgba(0, 0, 0, 0.842);
+    background-size: 200%;
+  }
+ 
+  #backBtn::before{ content: "ÎNAPOI";}
+  #playBtn::before{ content: "JOACĂ";}
+  #rulesBtn::before{ content: "REGULI";}
+
+  .btn:hover {
+    background-position: right;
+    transition-duration: 1s;
+  }
+  
+  .btn:hover::before {
+    background-position: right;
+    transition-duration: 1s;
+  }
+  
+  .btn:active {
+    transform: scale(0.95);
+  }
+
+
+  @media only screen and (max-width: 600px) {
+    img {width: 300px;}
+    body{font-size: 25px;
+    }
+  }

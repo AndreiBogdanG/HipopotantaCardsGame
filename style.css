@@ -1,0 +1,294 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+main{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    padding: 0;
+    margin: 0;
+}
+
+p{
+    padding: 0;
+    margin-top: 0;
+    font-size: large;
+}
+
+#version{
+    font-size: medium;
+}
+
+header{
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right,#77530a,#ffd277,#77530a,#77530a,#ffd277,#77530a);
+    background-size: 250%;
+}
+
+#titleImg{width: 400px;}
+
+.gameTitle{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+img{
+    width: 100px;
+}
+#title{
+   width: 400px;
+}
+
+.mainCard{
+    margin: 10px;
+}
+
+.mainCard:active{
+    transform: translateY(-10px);
+    box-shadow: -5px 10px 10px rgba(84, 83, 83, 0.5); 
+}
+
+body{
+    background-color: rgb(20, 16, 8);
+    background-size:100%;
+    color: azure;
+}
+
+main{
+    color: azure;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+    padding: 10px;
+   }
+
+#div1{
+    width: 300px;
+    align-items: center;
+}
+
+#divDrop {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 350px;
+    height: 200px;
+    padding: 10px;
+  }
+
+#textMessagesDivPC{
+    position: absolute;
+    top: 31%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 550px;
+    height: 20px;
+    padding: 10px;
+    color: rgb(249, 201, 97);
+}
+
+.emptySlots{
+    display: flex;
+    flex-direction: row;
+}
+
+.mainDiv{
+    display: flex;
+    justify-content: center;
+}
+
+#discarded{
+    position: absolute;
+    left: 215%;
+}
+
+#pcCard1, #pcCard2, #pcCard3, #pcCard4, #pcCard5,
+#pcCard6, #pcCard7, #pcCard8, #pcCard9, #pcCard10,
+#playerCard1, #playerCard2, #playerCard3, #playerCard4,
+#playerCard5, #playerCard6, #playerCard7, #playerCard8,
+#playerCard9, #playerCard10 {
+    position: absolute;
+}
+
+#pcCard1 { left: 43%; top: 15%; transform: rotate(-3deg); }
+#pcCard2 { left: 47%; top: 15%; transform: rotate(-3deg); }
+#pcCard3 { left: 39%; top: 16%; transform: rotate(-8deg); }
+#pcCard4 { left: 516; top: 16%; transform: rotate(8deg); }
+#pcCard5 { left: 35%; top: 17%; transform: rotate(-12deg); }
+#pcCard6 { left: 55%; top: 17%; transform: rotate(12deg); }
+#pcCard7 { left: 31%; top: 18%; transform: rotate(-17deg); }
+#pcCard8 { left: 59%; top: 18%; transform: rotate(17deg); }
+#pcCard9 { left: 27%; top: 19%; transform: rotate(-22deg); }
+#pcCard10 { left: 63%; top: 19%; transform: rotate(22deg); }
+
+#playerCard1 { left: 43%; top: 60%; transform: rotate(-3deg); }
+#playerCard2 { left: 47%; top: 60%; transform: rotate(3deg); }
+#playerCard3 { left: 39%; top: 61%; transform: rotate(-8deg); }
+#playerCard4 { left: 51%; top: 61%; transform: rotate(8deg); }
+#playerCard5 { left: 35%; top: 62%; transform: rotate(-12deg); }
+#playerCard6 { left: 55%; top: 62%; transform: rotate(12deg); }
+#playerCard7 { left: 31%; top: 63%; transform: rotate(-17deg); }
+#playerCard8 { left: 59%; top: 63%; transform: rotate(17deg); }
+#playerCard9 { left: 27%; top: 64%; transform: rotate(-22deg); }
+#playerCard10 { left: 63%; top: 64%; transform: rotate(22deg); }
+
+.centralCards{
+   position: absolute;
+    left: 40%;
+    top: 37%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#newGameButton{
+    position: absolute;
+    left: 37%;
+    top: 90%;
+}
+
+#endTurnButton{
+    position: absolute;
+    top: 90%;
+    left: 55%
+}
+
+button {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right,#77530a,#ffd277,#77530a,#77530a,#ffd277,#77530a);
+    background-size: 250%;
+    background-position: left;
+    color: #ffd277;
+    position: relative;
+    cursor: pointer;
+    transition-duration: 1s;
+    overflow: hidden;
+  }
+  button::before {
+    position: absolute;
+    color: #ffd277;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 97%;
+    height: 90%;
+    border-radius: 8px;
+    transition-duration: 1s;
+    background-color: rgba(0, 0, 0, 0.842);
+    background-size: 200%;
+  }
+  #newGameButton::before{
+    content: "JOC NOU";
+  }
+  #endTurnButton::before{
+    content: "TERMINĂ TURA";
+  }
+
+  button:hover {
+    background-position: right;
+    transition-duration: 1s;
+  }
+  
+  button:hover::before {
+    background-position: right;
+    transition-duration: 1s;
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+
+.playerCards{
+    visibility: hidden;
+}
+
+.pcCards{
+    visibility: hidden;
+}
+
+#arrow{
+    position: absolute;
+    left: 35%; 
+    top: 86%;
+}
+
+
+
+
+@media only screen and (max-width: 1024px) {
+    #playerCard1 { left: 37%; top: 65.3%; transform: rotate(-3deg); }
+    #playerCard2 { left: 44%; top: 65.3%; transform: rotate(3deg); }
+    #playerCard3 { left: 30%; top: 66%; transform: rotate(-8deg); }
+    #playerCard4 { left: 52%; top: 66%; transform: rotate(8deg); }
+    #playerCard5 { left: 22%; top: 67%; transform: rotate(-12deg); }
+    #playerCard6 { left: 60%; top: 67%; transform: rotate(12deg); }
+    #playerCard7 { left: 14%; top: 68%; transform: rotate(-17deg); }
+    #playerCard8 { left: 68%; top: 68%; transform: rotate(17deg); }
+    #playerCard9 { left: 7%; top: 69.6%; transform: rotate(-22deg); }
+    #playerCard10 { left: 76%; top: 69.6%; transform: rotate(22deg); }
+
+    #pcCard1 { left: 36%; top: 15.4%; transform: rotate(-3deg); }
+    #pcCard2 { left: 44%; top: 15.4%; transform: rotate(3deg); }
+    #pcCard3 { left: 30%; top: 16%; transform: rotate(-8deg); }
+    #pcCard4 { left: 52%; top: 16%; transform: rotate(8deg); }
+    #pcCard5 { left: 22%; top: 17%; transform: rotate(-12deg); }
+    #pcCard6 { left: 60%; top: 17%; transform: rotate(12deg); }
+    #pcCard7 { left: 14%; top: 18%; transform: rotate(-17deg); }
+    #pcCard8 { left: 68%; top: 18%; transform: rotate(17deg); }
+    #pcCard9 { left: 7%; top: 19.5%; transform: rotate(-22deg); }
+    #pcCard10 { left: 76%; top: 19.5%; transform: rotate(22deg); }
+
+    #textMessagesDivPC { top: 35%; height: 20px; }
+
+    .centralCards { top: 43%; left: 32%;}
+    #newGameButton { left: 25%; top: 90%; }
+    #endTurnButton { left: 54%; }
+
+    #arrow{
+        position: absolute;
+        left: 25%; 
+        top: 86%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+   
+    
+    img { max-width: 70px; }
+    #textMessagesDivPC { top: 35%; height: 20px;  color: black;  background: linear-gradient(to right,#77530a,#ffd277,#77530a,#77530a,#ffd277,#77530a);
+    }
+
+    .centralCards { top: 43%; left: 22%;}
+    #newGameButton { left: 8%; top: 90%; }
+    #endTurnButton { left: 50%; }
+    #titleImg{max-width: 250px;}
+    header{height: 70px; margin-top: 10px;}
+    #arrow{
+        position: absolute;
+        left: 8%; 
+        top: 86%;
+    }
+    
+}
+@media only screen and (max-height: 1024px){
+    img {max-width: 70px;}
+    #titleImg{max-width: 400px;}
+}
