@@ -151,7 +151,7 @@ function translateImage(element) {
                     resetCardPositions();
                 }, 500);
             } else {
-                document.getElementById('discarded').src = '/Images/' + currentCard.fileName;
+                document.getElementById('discarded').src = 'Images/' + currentCard.fileName;
                 discardPair();
             }
         }
@@ -255,7 +255,7 @@ function resetCardPositions() {
 
 // Function to clear (make invisible) the discarded cards
 function clearDiscarded() {
-    document.getElementById('discarded').src = '/Images/empty.png';
+    document.getElementById('discarded').src = 'Images/empty.png';
 }
 
 // Function to deal the first 4 cards when starting the game
@@ -467,7 +467,7 @@ function checkIfPCHasMatchingCards() {
 
                 console.log('Matching cards found at PC: ' + computerMatchingCards);
                
-                document.getElementById('discarded').src = '/Images/' + tempCardObject2.fileName;
+                document.getElementById('discarded').src = 'Images/' + tempCardObject2.fileName;
                 return computerMatchingCards;
             }
         }
