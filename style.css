@@ -272,9 +272,9 @@ button {
 @media only screen and (max-width: 600px) {
        
     img { max-width: 70px; }
-    #textMessagesDivPC { top: 35%; height: 20px;  color: black;  background: linear-gradient(to right,#77530a,#ffd277,#77530a,#77530a,#ffd277,#77530a);
+    #textMessagesDivPC { top: 36%; height: 32px;  color: black;  background: linear-gradient(to right,#77530a,#ffd277,#77530a,#77530a,#ffd277,#77530a);
     }
-    .centralCards { top: 43%; left: 22%;}
+    .centralCards { top: 46%; left: 22%;}
     #newGameButton { left: 8%; top: 90%; }
     #endTurnButton { left: 50%; }
     #titleImg{max-width: 250px;}
@@ -284,7 +284,10 @@ button {
         left: 8%; 
         top: 86%;
     }
+    main, html, body{
+        max-height: 60vh;
 
+    }
 
     
 }
