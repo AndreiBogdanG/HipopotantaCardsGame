@@ -93,7 +93,7 @@ main{
     top: 31%;
     left: 50%;
     transform: translateX(-50%);
-    width: 550px;
+    width: 95%;
     height: 20px;
     padding: 10px;
     color: rgb(249, 201, 97);
@@ -270,12 +270,10 @@ button {
 }
 
 @media only screen and (max-width: 600px) {
-   
-    
+       
     img { max-width: 70px; }
     #textMessagesDivPC { top: 35%; height: 20px;  color: black;  background: linear-gradient(to right,#77530a,#ffd277,#77530a,#77530a,#ffd277,#77530a);
     }
-
     .centralCards { top: 43%; left: 22%;}
     #newGameButton { left: 8%; top: 90%; }
     #endTurnButton { left: 50%; }
@@ -286,5 +284,7 @@ button {
         left: 8%; 
         top: 86%;
     }
+
+
     
 }
