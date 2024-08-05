@@ -12,6 +12,11 @@
 </head>
 
 <body>
+    <audio id="soundTrack">
+        <source src="Sounds/Hipopotanta.wav" type="audio/wav">
+    </audio>
+
+
     <audio id="myAudio">
         <source src="Sounds/deal.wav" type="audio/wav">
     </audio>
@@ -52,16 +57,16 @@
 </div>
 
 <div class="playerCards">
-    <img id="playerCard9"  src="Images/9d.png" alt="First Player's Deck" draggable="false"  onclick = "pickCard(event)">
-    <img id="playerCard7"  src="Images/7s.png" alt="First Player's Deck" draggable="false"  onclick = "pickCard(event)">
-    <img id="playerCard5"  src="Images/5c.png" alt="First Player's Deck" draggable="false"  onclick = "pickCard(event)">
-    <img id="playerCard3"  src="Images/3s.png" alt="First Player's Deck" draggable="false"  onclick = "pickCard(event)">
-    <img id="playerCard1"  src="Images/15s.png" alt="First Player's Deck" draggable="false"  onclick = "pickCard(event)">
-    <img id="playerCard2"  src="Images/2d.png" alt="First Player's Deck" draggable="false"  onclick = "pickCard(event)">
-    <img id="playerCard4"  src="Images/4c.png" alt="First Player's Deck" draggable="false"  onclick = "pickCard(event)">
-    <img id="playerCard6"  src="Images/6c.png" alt="First Player's Deck" draggable="false"  onclick = "pickCard(event)">
-    <img id="playerCard8"  src="Images/8s.png" alt="First Player's Deck" draggable="false"  onclick = "pickCard(event)">
-    <img id="playerCard10" src="Images/10d.png" alt="First Player's Deck" draggable="false"  onclick = "pickCard(event)">
+    <img id="playerCard9"  src="Images/bkgr.png" alt="First Player's Deck" draggable="false"  onclick = "pickCard(event)">
+    <img id="playerCard7"  src="Images/bkgr.png" alt="First Player's Deck" draggable="false"  onclick = "pickCard(event)">
+    <img id="playerCard5"  src="Images/bkgr.png" alt="First Player's Deck" draggable="false"  onclick = "pickCard(event)">
+    <img id="playerCard3"  src="Images/bkgr.png" alt="First Player's Deck" draggable="false"  onclick = "pickCard(event)">
+    <img id="playerCard1"  src="Images/bkgr.png" alt="First Player's Deck" draggable="false"  onclick = "pickCard(event)">
+    <img id="playerCard2"  src="Images/bkgr.png" alt="First Player's Deck" draggable="false"  onclick = "pickCard(event)">
+    <img id="playerCard4"  src="Images/bkgr.png" alt="First Player's Deck" draggable="false"  onclick = "pickCard(event)">
+    <img id="playerCard6"  src="Images/bkgr.png" alt="First Player's Deck" draggable="false"  onclick = "pickCard(event)">
+    <img id="playerCard8"  src="Images/bkgr.png" alt="First Player's Deck" draggable="false"  onclick = "pickCard(event)">
+    <img id="playerCard10" src="Images/bkgr.png" alt="First Player's Deck" draggable="false"  onclick = "pickCard(event)">
 </div>
 
 <p id="testP"></p>
@@ -69,6 +74,7 @@
 <div class="btnDiv">
 <img id="arrow" src="Images/arrow.png" alt="">
 <button class="btn" id="newGameButton" ondblclick="dealFirstCards()"></button>
+<img id="soundBtn" src="Images/SoundOn.png" alt="Sound" onclick="toggleMusic()">
 <button class="btn" id="endTurnButton" onclick="endPlayersTurn()"></button>
 </div>
 

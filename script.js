@@ -5,7 +5,8 @@ let card = {};
 let holdCardsPC = [];
 let holdCardsPlayer = [];
 let playerOneTurn = true;
-let x = document.getElementById("myAudio");
+let dealCardSound = document.getElementById("myAudio");
+let soundTrack = document.getElementById("soundTrack");
 let originalPositions = {};
 let originalTransforms = {};
 initOriginalPositions();
@@ -19,6 +20,13 @@ let firstRound;
 document.getElementById('textMessagesPc').innerText = 'Dublu-Click pe "Joc Nou" pentru a începe!';
 document.getElementById('endTurnButton').disabled = true;
 document.getElementById('mainDeck').style.visibility = 'hidden';
+let isMusicOn = true;
+
+
+
+
+
+
 
 // Function to create a deck of cards
 function createDeck() {
@@ -260,6 +268,12 @@ function clearDiscarded() {
 
 // Function to deal the first 4 cards when starting the game
 function dealFirstCards() {
+
+
+    if (isMusicOn) {
+        playSoundTrack();
+
+    }
     document.getElementById('mainDeck').style.visibility = 'visible';
     document.getElementById('textMessagesPc').innerText = '';
     document.getElementById('endTurnButton').disabled = false;
@@ -355,10 +369,38 @@ function resetDeckImages() {
     document.getElementById('mainDeck').style.visibility = mainDeck.length > 0 ? 'visible' : 'hidden';
 }
 
-// Function to play audio
+// Function to play cards sound
 function playSound() {
-    x.play();
+    dealCardSound.play();
 }
+
+// Function to play soundtrack:
+function playSoundTrack(){
+    
+    
+    soundTrack.currentTime = 0;
+    soundTrack.play();
+}
+
+
+// Function to toggle sound:
+
+function toggleMusic(){
+    if (isMusicOn) {
+        soundTrack.pause();
+        document.getElementById('soundBtn').setAttribute('src','Images/SoundOff.png');
+        isMusicOn = false;
+    } else {
+        soundTrack.play();
+        document.getElementById('soundBtn').setAttribute('src','Images/SoundOn.png');
+        isMusicOn = true;
+    }
+
+
+}
+
+
+
 
 // PC functions
 // --------------------------------------------------------------------------------------

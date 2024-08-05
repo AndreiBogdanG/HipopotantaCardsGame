@@ -44,7 +44,7 @@ header{
 }
 
 img{
-    width: 100px;
+    width: 90px;
 }
 #title{
    width: 400px;
@@ -90,7 +90,7 @@ main{
 
 #textMessagesDivPC{
     position: absolute;
-    top: 31%;
+    top: 37%;
     left: 50%;
     transform: translateX(-50%);
     width: 95%;
@@ -122,32 +122,32 @@ main{
     position: absolute;
 }
 
-#pcCard1 { left: 43%; top: 15%; transform: rotate(-3deg); }
-#pcCard2 { left: 47%; top: 15%; transform: rotate(-3deg); }
-#pcCard3 { left: 39%; top: 16%; transform: rotate(-8deg); }
-#pcCard4 { left: 516; top: 16%; transform: rotate(8deg); }
-#pcCard5 { left: 35%; top: 17%; transform: rotate(-12deg); }
-#pcCard6 { left: 55%; top: 17%; transform: rotate(12deg); }
-#pcCard7 { left: 31%; top: 18%; transform: rotate(-17deg); }
-#pcCard8 { left: 59%; top: 18%; transform: rotate(17deg); }
-#pcCard9 { left: 27%; top: 19%; transform: rotate(-22deg); }
-#pcCard10 { left: 63%; top: 19%; transform: rotate(22deg); }
+#pcCard1 { left: 44%; top: 17%; transform: rotate(-3deg); }
+#pcCard2 { left: 48%; top: 17%; transform: rotate(-3deg); }
+#pcCard3 { left: 40%; top: 18%; transform: rotate(-8deg); }
+#pcCard4 { left: 52%; top: 18%; transform: rotate(8deg); }
+#pcCard5 { left: 36%; top: 19%; transform: rotate(-12deg); }
+#pcCard6 { left: 56%; top: 19%; transform: rotate(12deg); }
+#pcCard7 { left: 32%; top: 20%; transform: rotate(-17deg); }
+#pcCard8 { left: 60%; top: 20%; transform: rotate(17deg); }
+#pcCard9 { left: 28%; top: 21%; transform: rotate(-22deg); }
+#pcCard10 { left: 64%; top: 21%; transform: rotate(22deg); }
 
-#playerCard1 { left: 43%; top: 60%; transform: rotate(-3deg); }
-#playerCard2 { left: 47%; top: 60%; transform: rotate(3deg); }
-#playerCard3 { left: 39%; top: 61%; transform: rotate(-8deg); }
-#playerCard4 { left: 51%; top: 61%; transform: rotate(8deg); }
-#playerCard5 { left: 35%; top: 62%; transform: rotate(-12deg); }
-#playerCard6 { left: 55%; top: 62%; transform: rotate(12deg); }
-#playerCard7 { left: 31%; top: 63%; transform: rotate(-17deg); }
-#playerCard8 { left: 59%; top: 63%; transform: rotate(17deg); }
-#playerCard9 { left: 27%; top: 64%; transform: rotate(-22deg); }
-#playerCard10 { left: 63%; top: 64%; transform: rotate(22deg); }
+#playerCard1 { left: 44%; top: 65%; transform: rotate(-3deg); }
+#playerCard2 { left: 48%; top: 65%; transform: rotate(3deg); }
+#playerCard3 { left: 40%; top: 66%; transform: rotate(-8deg); }
+#playerCard4 { left: 52%; top: 66%; transform: rotate(8deg); }
+#playerCard5 { left: 36%; top: 67%; transform: rotate(-12deg); }
+#playerCard6 { left: 56%; top: 67%; transform: rotate(12deg); }
+#playerCard7 { left: 32%; top: 68%; transform: rotate(-17deg); }
+#playerCard8 { left: 60%; top: 68%; transform: rotate(17deg); }
+#playerCard9 { left: 28%; top: 69%; transform: rotate(-22deg); }
+#playerCard10 { left: 64%; top: 69%; transform: rotate(22deg); }
 
 .centralCards{
    position: absolute;
     left: 40%;
-    top: 37%;
+    top: 44%;
     display: flex;
     justify-content: space-between;
 }
@@ -230,7 +230,13 @@ button {
     top: 86%;
 }
 
-
+#soundBtn{
+    width: 40px;
+    position: absolute;
+    left: 50%;
+    top: 91.5%;
+    
+}
 
 
 @media only screen and (max-width: 1024px) {
@@ -267,6 +273,15 @@ button {
         left: 25%; 
         top: 86%;
     }
+
+
+    #soundBtn{
+        width: 40px;
+        position: absolute;
+        left: 45%;
+        top: 91.5%;
+    }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -289,5 +304,14 @@ button {
 
     }
 
+    #soundBtn{
+        width: 40px;
+        position: absolute;
+        left: 45%;
+        top: 83.5%;
+    }
     
 }
+
+
+
