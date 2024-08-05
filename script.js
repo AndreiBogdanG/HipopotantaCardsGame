@@ -376,15 +376,11 @@ function playSound() {
 
 // Function to play soundtrack:
 function playSoundTrack(){
-    
-    
     soundTrack.currentTime = 0;
     soundTrack.play();
 }
 
-
 // Function to toggle sound:
-
 function toggleMusic(){
     if (isMusicOn) {
         soundTrack.pause();
@@ -395,10 +391,20 @@ function toggleMusic(){
         document.getElementById('soundBtn').setAttribute('src','Images/SoundOn.png');
         isMusicOn = true;
     }
-
-
 }
 
+// Function to handle visibility change
+function handleVisibilityChange() {
+    if (document.hidden) {
+        soundTrack.pause();
+    } else {
+        soundTrack.play();
+    }
+}
+
+
+// Event listener to pause the music if the window is not visible:
+document.addEventListener('visibilitychange', handleVisibilityChange, false);
 
 
 
